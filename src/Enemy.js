@@ -20,7 +20,7 @@ export default class Enemy {
     this.scaredAboutToExpireTimerDefault = 10;
     this.scaredAboutToExpireTimer = this.scaredAboutToExpireTimerDefault;
   }
-
+  // Rendering sistem
   draw(ctx, pause, pacman) {
     if (!pause) {
       this.#move();

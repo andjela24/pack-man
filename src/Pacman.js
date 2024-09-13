@@ -38,6 +38,7 @@ export default class Pacman {
     up: 3,
   };
 
+  // Rendering sistem
   draw(ctx, pause, enemies) {
     if (!pause) {
       this.#move();
@@ -93,7 +94,7 @@ export default class Pacman {
 
     this.pacmanImageIndex = 0;
   }
-
+  //UI sistem
   #keydown = (event) => {
     //up
     if (event.keyCode == 38) {
