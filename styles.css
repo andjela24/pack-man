@@ -1,19 +1,42 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(0deg, rgb(208, 62, 25) 0%, rgb(219, 133, 28) 100%);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 #gameCanvas {
     box-shadow: 10px 10px 20px black;
+    margin-bottom: 20px;
 }
 
 h1 {
     text-align: center;
-    font-family: comic sans MS;
+    font-family: 'Comic Sans MS', cursive;
     color: lightgrey;
+    margin-bottom: 20px;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    height: 100vh;
-    background: linear-gradient(0deg,
-            rgb(208, 62, 25) 0%,
-            rgb(219, 133, 28) 100%);
+button {
+    padding: 10px 30px;
+    font-size: 20px;
+    font-family: 'Comic Sans MS', cursive;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
 }
